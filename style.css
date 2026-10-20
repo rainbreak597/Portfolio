@@ -1,0 +1,74 @@
+body{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, darkred,darkblue);
+    color: white;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input[type="button"],
+input[type="button"] {
+    border: 2px solid indigo;
+    border-radius: 30px;
+    padding: 22px 20px;
+    outline: none;
+    font-size: 25px;
+}
+
+input.focus{
+    border-color: indigo;
+    box-shadow: purple;
+}
+
+.portfolio-logo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid burlywood;
+}
+
+.app-layout{
+    display: flex;
+    min-height: 100vh
+}
+
+.sidebar {
+    width: 250px;
+    background-color: violet;
+    padding: 20px;
+    border-right:1px solid purple;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+
+
+.sidebar-brand {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: darkblue;
+}
+
+.sidebar-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu-item{
+    color: darkmagenta;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background 0.2s ease ;
+}
+.menu-item.hover, .menu-item.active {
+    background-color: darkorchid;
+    color:black
+}
